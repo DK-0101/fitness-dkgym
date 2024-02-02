@@ -34,7 +34,7 @@ const HeroBanner = () => {
        variant='contained'
        color='primary'
        href='#exercises'
-       sx={{ backgroundColor: '#2EB5F0', padding: '14px'}}
+       sx={{ backgroundColor: '#2EB50', padding: '14px'}}
        >
         Explore Exercises
        </Button>
