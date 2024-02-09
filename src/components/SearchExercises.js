@@ -22,7 +22,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
     fetchExercisesData();
 
-   }, [])
+   }, []);
 
 const handleSearch = async () => {
   if(search) {
@@ -35,6 +35,8 @@ const handleSearch = async () => {
       || exercises.equipment.toLowerCase().includes(search)
       || exercises.bodyPart.toLowerCase().includes(search),
     );
+
+    window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
 
     setSearch('')
     setExercises(searchedExercises);
@@ -51,7 +53,7 @@ const handleSearch = async () => {
      <Typography 
       fontWeight={700}
       sx={{
-        fontSize: { lg: '44px', xs: '30px'}}}
+        fontSize: { lg: '44px', xs: '30px'} }}
         mb='50px' textAlign='center'
         >
         Awesome Exercises You <br/> Should Know
@@ -100,7 +102,7 @@ const handleSearch = async () => {
       }}
     >
         <HorizontalScrollbar
-         data={bodyParts} 
+         data={bodyParts} bodyParts
          bodyPart={bodyPart}
          setBodyPart={setBodyPart} isBodyParts
         />
