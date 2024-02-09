@@ -102,7 +102,7 @@ const handleSearch = async () => {
         <HorizontalScrollbar
          data={bodyParts} 
          bodyPart={bodyPart}
-         setBodyPart={setBodyPart}
+         setBodyPart={setBodyPart} isBodyParts
         />
      </Box>
     </Stack>
